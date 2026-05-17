@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: mart_delivery_sla
+    description: "Mart executivo de SLA e performance logística."
+
+    columns:
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: avg_real_shipping_days
+        tests:
+          - not_null
+
+      - name: avg_scheduled_shipping_days
+        tests:
+          - not_null
+
+      - name: avg_shipping_delay
+        tests:
+          - not_null
