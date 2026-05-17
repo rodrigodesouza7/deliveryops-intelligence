@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_delivery_performance
+    description: "Camada intermediária para construção da performance de entregas."
+
+    columns:
+      - name: order_id
+        tests:
+          - not_null

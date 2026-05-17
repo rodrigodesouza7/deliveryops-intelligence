@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_delivery_executive
+    description: "Mart executivo inicial com KPIs gerais de pedidos e entregas."
+
+    columns:
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: unique_orders
+        tests:
+          - not_null
