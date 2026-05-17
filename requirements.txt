@@ -1,0 +1,6 @@
+Hostname  : dpg-d84gpkp9rddc739kuvmg-a
+Port : 5432
+Database : deliveryops
+Username : deliveryops_user
+Password : lizcFmKr9zCc9alBcfV7PfTCKF7eMLEp
+External Database URL  postgresql://deliveryops_user:lizcFmKr9zCc9alBcfV7PfTCKF7eMLEp@dpg-d84gpkp9rddc739kuvmg-a.oregon-postgres.render.com/deliveryops
