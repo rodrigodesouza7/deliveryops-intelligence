@@ -11,14 +11,16 @@ target/
 dbt_packages/
 logs/
 
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/*.pid
+
 # macOS
 .DS_Store
 
 # VSCode
 .vscode/
-
-# Airflow
-airflow/logs/
 
 # Data
 *.csv
