@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: mart_shipping_performance
+    description: "Mart de performance logística por modo de envio."
+
+    columns:
+      - name: shipping_mode
+        tests:
+          - not_null
+
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: avg_delay
+        tests:
+          - not_null

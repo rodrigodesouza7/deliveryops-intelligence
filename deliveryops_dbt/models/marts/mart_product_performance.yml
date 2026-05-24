@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: mart_product_performance
+    description: "Mart de performance de produtos e categorias."
+
+    columns:
+      - name: product_name
+        tests:
+          - not_null
+
+      - name: category_name
+        tests:
+          - not_null
+
+      - name: total_sales
+        tests:
+          - not_null

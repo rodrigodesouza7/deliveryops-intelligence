@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: mart_regional_performance
+    description: "Mart de performance regional de vendas e lucro."
+
+    columns:
+      - name: order_region
+        tests:
+          - not_null
+
+      - name: order_country
+        tests:
+          - not_null
+
+      - name: total_sales
+        tests:
+          - not_null

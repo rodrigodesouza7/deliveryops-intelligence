@@ -1,7 +1,25 @@
-__pycache__/
-.vscode/
-.env
-*.log
-.DS_Store
-.env
+# Python
 .venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Airflow
+airflow/logs/
+
+# Data
+*.csv
+*.parquet

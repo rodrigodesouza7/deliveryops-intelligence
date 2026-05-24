@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: mart_revenue
+    description: "Mart executivo de receita e lucro por região."
+
+    columns:
+      - name: order_region
+        tests:
+          - not_null
+
+      - name: total_revenue
+        tests:
+          - not_null
+
+      - name: total_profit
+        tests:
+          - not_null

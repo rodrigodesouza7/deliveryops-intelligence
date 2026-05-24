@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: mart_customer_orders
+    description: "Mart de pedidos e receita por cliente."
+
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: total_orders
+        tests:
+          - not_null
+
+      - name: total_customer_revenue
+        tests:
+          - not_null
