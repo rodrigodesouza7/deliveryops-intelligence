@@ -27,20 +27,20 @@ jobs:
         run: |
           mkdir -p ~/.dbt
           python3 -c "
-          import os, re
+          import os
+          from urllib.parse import urlparse
           url = os.environ['DATABASE_URL']
-          m = re.match(r'postgresql://([^:]+):([^@]+)@([^:/]+):(\d+)/(.+)', url)
-          user, pwd, host, port, dbname = m.groups()
+          p = urlparse(url)
           content = f'''deliveryops_dbt:
             target: dev
             outputs:
               dev:
                 type: postgres
-                host: {host}
-                user: {user}
-                password: {pwd}
-                port: {int(port)}
-                dbname: {dbname}
+                host: {p.hostname}
+                user: {p.username}
+                password: {p.password}
+                port: {p.port or 5432}
+                dbname: {p.path.lstrip('/')}
                 schema: analytics
                 threads: 4
                 sslmode: require
