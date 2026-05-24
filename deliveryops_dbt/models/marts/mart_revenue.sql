@@ -1,14 +1,8 @@
 select
-    "Order Region" as order_region,
-
-    count(*) as total_orders,
-
-    sum("Sales") as total_revenue,
-
-    avg("Sales") as avg_order_value,
-
-    sum("Order Profit Per Order") as total_profit
-
+    order_region,
+    count(*)                    as total_orders,
+    sum(sales)                  as total_revenue,
+    avg(sales)                  as avg_order_value,
+    sum(order_profit_per_order) as total_profit
 from {{ ref('int_delivery_performance') }}
-
 group by 1

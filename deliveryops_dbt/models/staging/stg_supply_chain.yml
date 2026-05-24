@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: stg_supply_chain
+    description: "Staging da tabela bruta supply_chain_raw. Renomeia todas as colunas para snake_case e remove nomes problemáticos com espaços e caracteres especiais."
+
+    columns:
+      - name: order_id
+        description: "Identificador do pedido."
+        tests:
+          - not_null
+
+      - name: order_item_id
+        description: "Identificador do item do pedido."
+        tests:
+          - not_null
+
+      - name: customer_id
+        description: "Identificador do cliente."
+        tests:
+          - not_null
+
+      - name: shipping_mode
+        description: "Modalidade de envio (Standard Class, First Class, etc)."
+        tests:
+          - not_null
+
+      - name: order_region
+        description: "Região geográfica do pedido."
+        tests:
+          - not_null
+
+      - name: sales
+        description: "Valor de vendas do item."
+        tests:
+          - not_null
+
+      - name: days_shipping_real
+        description: "Dias reais de envio."
+        tests:
+          - not_null
+
+      - name: days_shipping_scheduled
+        description: "Dias programados para envio."
+        tests:
+          - not_null
