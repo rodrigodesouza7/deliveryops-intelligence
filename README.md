@@ -1,4 +1,4 @@
-markdown# 🚚 DeliveryOps Intelligence — Pipeline End-to-End de Analytics Engineering
+# 🚚 DeliveryOps Intelligence — Pipeline End-to-End de Analytics Engineering
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue)
 ![dbt](https://img.shields.io/badge/dbt-1.10.0-orange)
